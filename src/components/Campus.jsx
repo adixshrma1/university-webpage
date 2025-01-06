@@ -7,7 +7,7 @@ import WhiteArrow from "../assets/white-arrow.png"
 
 const Campus = () => {
   return (
-    <div className='w-[70%] my-24 mx-auto text-center'>
+    <div className='campus w-[70%] my-24 mx-auto text-center'>
         <div className='flex justify-between mb-7'>
             <img className='w-[23%] rounded-lg' src={Gallery1}/>
             <img className='w-[23%] rounded-lg' src={Gallery2}/>

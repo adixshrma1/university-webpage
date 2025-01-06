@@ -10,7 +10,7 @@ const Programs = () => {
     const cardClasses = "text-white rounded absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,15,152,0.3)] flex flex-col items-center justify-center opacity-0 hover:opacity-100 hover:cursor-pointer pt-52 hover:pt-0 transition-all duration-500";
   return (
     <>
-        <div className='flex gap-10 w-[70%] my-20 mx-auto'>
+        <div className='programs flex gap-10 w-[70%] my-20 mx-auto'>
             <div className='relative'>
                 <img className='rounded' src={Program1}/>
                 <div className={`${cardClasses} `}>
