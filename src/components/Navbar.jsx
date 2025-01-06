@@ -9,7 +9,7 @@ const Navbar = () => {
   })
   return (
     <>
-        <div className={`w-full text-white fixed top-0 left-0 z-10 flex items-center justify-between px-32 ${sticky ? "bg-[#212ea0] transition duration-500": ""}`}>
+        <div className={`w-full text-white fixed top-0 left-0 z-10 flex items-center justify-between px-32 transition duration-500 ${sticky ? "bg-[#212ea0]": ""}`}>
             <img src={logo} alt="logo" className='w-44' />
             <ul className='flex items-center gap-5 my-3'>
                 <li>Home</li>
