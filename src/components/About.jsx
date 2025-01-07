@@ -2,12 +2,12 @@ import React from 'react'
 import AboutImg from '../assets/about.png'
 import PlayIcon from '../assets/play-icon.png'
 
-const About = () => {
+const About = ({setPlay}) => {
   return (
     <div className='about w-[70%] my-24 mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between'>
         <div className='basis-[40%] order-1 lg:order-first relative flex items-center justify-center'>
             <img className='rounded-lg' src={AboutImg} alt="" />
-            <img src={PlayIcon} className='absolute w-20' />
+            <img src={PlayIcon} onClick={()=> setPlay(true)} className='absolute w-20 cursor-pointer' />
         </div>
         <div className='basis-[50%]'>
             <h1 className='text-[#212ea0] font-semibold mb-2'>ABOUT UNIVERSITY</h1>

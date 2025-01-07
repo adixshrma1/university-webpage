@@ -13,7 +13,7 @@ const Navbar = () => {
   })
   return (
     <>
-        <div className={`w-full text-white fixed top-0 left-0 z-10 flex items-center justify-between p-4 lg:px-32 transition duration-500 ${sticky ? "bg-[#212ea0]": ""}`}>
+        <div className={`w-full text-white fixed top-0 left-0 z-10 flex items-center justify-between lg:px-32 transition duration-500 ${sticky ? "bg-[#212ea0]": ""}`}>
             <img src={logo} alt="logo" className='w-36 lg:w-44' />
             <ul className={`${navShow? "": "right-[-200px]"} fixed top-0 right-0 bottom-0 z-[-1] bg-[#212ea0] px-5 pt-16 flex flex-col gap-2 duration-500 lg:p-0 lg:static lg:bg-transparent lg:flex-row lg:items-center lg:gap-5 lg:my-3`}>
                 <li className='cursor-pointer '><Link to='hero' smooth={true} duration={500}>Home</Link></li>
