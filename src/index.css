@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 .btn{
-    @apply bg-white text-[#212121] py-3.5 px-6 rounded-full cursor-pointer border-0 
+    @apply bg-white text-[#212121] py-2 px-4 md:py-3.5 md:px-6 rounded-full cursor-pointer border-0 
 }
 
 .dark-btn{

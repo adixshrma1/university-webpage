@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact w-[70%] my-20 mx-auto flex justify-between">
+    <div className="contact w-[70%] mt-20 mb-10 mx-auto flex flex-col md:flex-row gap-7 md:gap-0 justify-between">
       <div className="basis-[48%] text-[#676767]">
         <div className="flex items-center gap-2 mb-3">
           <h1 className="text-[#000f38] font-medium text-2xl">

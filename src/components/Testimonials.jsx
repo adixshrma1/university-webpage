@@ -6,8 +6,8 @@ import User2 from "../assets/user-2.png";
 import User3 from "../assets/user-3.png";
 import User4 from "../assets/user-4.png";
 
-  const btnClass = "absolute w-12 p-3 bg-[#212ea0] rounded-full cursor-pointer top-1/2 -translate-y-1/2";
-  const slide = "text-[#676767] p-10 shadow-md rounded-lg"
+  const btnClass = "absolute w-9 lg:w-12 p-2 lg:p-3 bg-[#212ea0] rounded-full cursor-pointer top-1/2 -translate-y-1/2";
+  const slide = "text-[#676767] p-5 lg:p-10 shadow-md rounded-lg text-sm md:text-base"
   const img = "w-16 rounded-full border-4 border-[#212ea0] mr-2";
   const userInfo = "flex items-center mb-3"
   const userH1 = "text-[#212ea0] font-semibold" 
@@ -22,18 +22,18 @@ const Testimonials = () => {
     }
   }
   const moveForward =()=>{
-    if(tx > -50){
+    if(tx > -75){
       tx -= 25;
       slider.current.style.transform = `translateX(${tx}%)`
     }
   }
   return (
-    <div className="testimonials w-[80%] my-20 px-20 mx-auto relative">
+    <div className="testimonials w-[80%] my-20 px-10 lg:px-20 mx-auto relative">
       <img src={prevIcon} className={`${btnClass} left-0 `} onClick={moveBackward}/>
       <img src={nextIcon} className={`${btnClass} right-0 `} onClick={moveForward}/>
       <div className="overflow-hidden">
-        <ul ref={slider} className={`flex w-[200%] transition-all duration-500`}>
-          <li className="p-5">
+        <ul ref={slider} className={`flex flew-rol w-[400%] transition-all duration-500`}>
+          <li className="p-2.5 lg:p-5">
             <div className={slide}>
                 <div className={userInfo}>
                     <img className={img} src={User1}/>
@@ -49,7 +49,7 @@ const Testimonials = () => {
                     reiciendis maxime voluptate natus alias!</p>
             </div>
           </li>
-          <li className="p-5">
+          <li className="p-2.5 lg:p-5">
             <div className={slide}>
                 <div className={userInfo}>
                     <img className={img} src={User2}/>
@@ -65,7 +65,7 @@ const Testimonials = () => {
                     reiciendis maxime voluptate natus alias!</p>
             </div>
           </li>
-          <li className="p-5">
+          <li className="p-2.5 lg:p-5">
             <div className={slide}>
                 <div className={userInfo}>
                     <img className={img} src={User3}/>
@@ -81,7 +81,7 @@ const Testimonials = () => {
                     reiciendis maxime voluptate natus alias!</p>
             </div>
           </li>
-          <li className="p-5">
+          <li className="p-2.5 lg:p-5">
             <div className={slide}>
                 <div className={userInfo}>
                     <img className={img} src={User4}/>

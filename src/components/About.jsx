@@ -4,8 +4,8 @@ import PlayIcon from '../assets/play-icon.png'
 
 const About = () => {
   return (
-    <div className='about w-[70%] my-24 mx-auto flex items-center justify-between'>
-        <div className='basis-[40%] relative  flex items-center justify-center'>
+    <div className='about w-[70%] my-24 mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between'>
+        <div className='basis-[40%] order-1 lg:order-first relative flex items-center justify-center'>
             <img className='rounded-lg' src={AboutImg} alt="" />
             <img src={PlayIcon} className='absolute w-20' />
         </div>
